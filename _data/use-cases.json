@@ -1,0 +1,22 @@
+[
+  {
+    "title": "SOUND",
+    "description": "detection of gunshots, explosions, agressions, screams"
+  },
+  {
+    "title": "VIBRATION",
+    "description": "detection of landslides, earthquakes, avalanches"
+  },
+  {
+    "title": "MOTION",
+    "description": "crossing, intrusions, presence, counting"
+  },
+  {
+    "title": "HEAT",
+    "description": "arson, forest fire prevention"
+  },
+  {
+    "title": "IMPACT",
+    "description": "collisions, projections, blows, breaking and entering"
+  }
+]

@@ -1,0 +1,67 @@
+lang: fr_FR
+title: HL2
+email: contact@hl2.com
+description: >-
+  HL2 is a start-up company dedicated to industrial Internet of Things using new LPWAN technologies
+  such as Sigfox™ and LoRaWAN™
+baseurl: ""
+url: https://security.hl2.com
+
+social:
+  name: HL2
+  links:
+    - https://twitter.com/hl2_fr
+    - https://www.facebook.com/hl2group
+    - https://www.linkedin.com/company/25071905
+    - https://github.com/hl2
+
+google:
+  tag_manager:
+    container_id: GTM-55HF8C3
+
+twitter:
+  username: hl2_fr
+
+github:
+  username:  hl2
+
+linkedin:
+  username: hl2-group
+
+assets:
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
+
+# Build settings
+markdown: kramdown
+sass:
+    style: compressed
+    sass_dir: _assets/
+
+plugins:
+  - bootstrap
+  - font-awesome-sass
+  - autoprefixer-rails
+  - jekyll-assets
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-google-tag-manager
+
+collections:
+  pages:
+    output: true
+    permalink: /:path
+
+# Exclude from processing.
+exclude:
+  - vendor
+  - .editorconfig
+  - .gitignore
+  - .travis.yml
+  - README.md
+  - LICENSE.md
+  - Gemfile
+  - Gemfile.lock
+  - _config.yml

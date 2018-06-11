@@ -1,0 +1,84 @@
+---
+title: Civil and military security with the Internet of Things
+jumboTitle: Civil and military security with the Internet of Things
+jumboLogo: true
+layout: default
+permalink: /
+---
+
+<div class="row section bg-light border-bottom">
+    <div class="col">
+        <h1 class="text-center">What the IoT brings to your applications</h1>
+
+        <div class="row mt-5 justify-content-center">
+            {% for bring in site.data.brings %}
+                <div class="p-2 col-sm-6 col-lg-6">
+                    <div class="card h-100 p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{{ bring.title }}</h5>
+                            <p class="card-text">{{ bring.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="row section border-bottom dark">
+    <div class="col">
+        <h1 class="text-center text-white">Use cases for our technologies</h1>
+
+        <div class="row mt-5 justify-content-center">
+            {% for usecase in site.data.use-cases %}
+                <div class="p-2 col-sm-6 col-lg-4">
+                    <div class="card h-100 p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{{ usecase.title }}</h5>
+                            <p class="card-text">{{ usecase.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="row section bg-light border-bottom">
+    <div class="col">
+        <h1 class="text-center">Our technologies</h1>
+
+        <div class="row mt-5 justify-content-center">
+            {% for technology in site.data.technologies %}
+                <div class="p-2 col-sm-6 col-lg-4">
+                    <div class="card h-100 p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{{ technology.title }}</h5>
+                            <p class="card-text">{{ technology.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="row section border-bottom dark">
+    <div class="col">
+        <h1 class="text-center text-white">HL2’s flexible and innovative solution for your applications</h1>
+
+        <div class="row mt-5 justify-content-center">
+            {% for product in site.data.products %}
+                <div class="p-2 col-sm-6 col-lg-4">
+                    <div class="card h-100 p-3">
+                        <img class="card-img-top product-img p-4" src="{% asset '{{ product.image }}' @path %}" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{{ product.title }}</h5>
+                            <p class="card-text">{{ product.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

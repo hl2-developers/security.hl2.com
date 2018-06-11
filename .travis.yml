@@ -1,0 +1,26 @@
+dist: trusty
+sudo: false
+language: ruby
+rvm:
+  - 2.5.1
+env:
+  - JEKYLL_ENV=production
+script:
+  - "./scripts/build.sh"
+deploy:
+  provider: pages
+  local-dir: _site
+  skip-cleanup: true
+  target-branch: gh-pages
+  github-token: "$GITHUB_TOKEN"
+  on:
+    branch: master
+notifications:
+  email: false
+  slack:
+    rooms:
+      - hl2:K02G5Q3OABa27MfJjDTruGfu#travis-ci
+    on_success: change
+    on_failure: always
+  rooms:
+    secure: dEtBuTTUKyUWZ5iKv9wvS0A6lc9kejFG/95/ttFcfRzaEaDGnkJOCfmpK+2EPPReJoKM5ATzDkcr/Sv/Dj5XkvKBNZ1crztdtItJndCvreDyIyEGB3uw1dThcCiiu1BYCOLzgHSj502HO0qXRNa+FVD4yXnG5584iiLezt+NxiiOd3g2xKIICZrH8GwXeBtkCje3QDj0ljQ+pWuSYaZEUeoWv+Evgp/tzLV4i7E9uP1sBye8G1mTLFgyiG10PsUFO1P/NAMNBXlTlEY0SOQ4fjKKey0aA7ksep+X4l4rAjw8hnhzBsutXL7GFXIDDCjFDDP43ICpXO0i3sk4ioQjLi10mcCvPZJ88PDmBJPn8PLuH0xv1gh2vowE79IVHjeGa4pEECIWAmRSWETx8t1U1M3bOIFwQZSHh9hps2OgDjn/v6iSs3KBCX8qzXRrfItDMhQf6vt0pGyt2MA7zHDZT8OCFU3AVJBe7b2CGBx1gV+mDYwEZJz4npP0wMfg9/owPGEuzb8lfIOclPpCNIdEGALGMvMnrGSEdIMunpxEl6enU2koQRG/Ynf4IME9O+HNJ8YIPOeLC95aFoY1VQCbYk82xIKApF7wiMczCkvb1jSs7xJMPP6tdGxTkXbT9logYyLiq6BsHRn0E9gQds2opvECQI+Sj+C3/IeUW8dNxlw=

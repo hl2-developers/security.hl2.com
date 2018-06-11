@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import "custom.scss";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "bootstrap";
+@import "variables.scss";
+
+body {
+  padding-top: $hl2-navbar-height;
+}
+
+/* Default Layout */
+.navbar {
+  min-height: $hl2-navbar-height;
+}
+
+.navbar-toggler {
+  margin-top: 2px;
+  padding: 9px 10px !important;
+}
+
+.anchor{
+  display: block;
+  height: $hl2-navbar-height;
+  margin-top: -$hl2-navbar-height;
+  visibility: hidden;
+}
+
+.section {
+  @extend .pt-5, .pb-5;
+
+  &.dark {
+    background-color: #191c2c;
+  }
+
+	@each $breakpoint, $length in $hl2-spacers {
+		@include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+			padding-right: $length;
+			padding-left: $length;
+		}
+  }
+}
+
+.jumbotron {
+	background-color: #191c2c;
+
+	@include media-breakpoint-up(lg) {
+		// background-image: asset_url('background.svg');
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+
+	.display-4 {
+		@include media-breakpoint-down(sm) {
+			font-size: 3rem;
+		}
+	}
+}
