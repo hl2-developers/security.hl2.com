@@ -12,31 +12,28 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      {% unless page.jumboLogo %}
-      <a class="navbar-brand" href="/">
-        <img src="{% asset 'hl2.svg' @path %}" width="50" class="d-inline-block align-top hl2-logo-stamp" alt="">
-      </a>
-      {% endunless %}
-
       <div id="navbarContent" class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#about-us">Use cases</a>
+            <a class="nav-link" href="/#use-cases">Use cases</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/events">Technologies</a>
+            <a class="nav-link" href="/#technologies">Technologies</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/news">Solution</a>
+            <a class="nav-link" href="/#solution">Solution</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/#contact">About us</a>
+            <a class="nav-link" href="/#about-us">About us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://hl2.com">hl2.com</a>
           </li>
         </ul>
       </div>
@@ -46,9 +43,7 @@
         <div class="container-fluid text-white text-center">
           <div class="row">
             <div class="col-12 col-lg-12">
-              {% if page.jumboLogo %}
               <img src="{% asset 'hl2.svg' @path %}" width="150" class="img-fluid m-3" />
-              {% endif %}
               <h1 class="display-4">
                   {{ page.jumboTitle | default: page.title }}
               </h1>
