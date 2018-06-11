@@ -1,21 +1,26 @@
 [
   {
+    "color": "#e7ac5a",
     "title": "SOUND",
     "description": "detection of gunshots, explosions, agressions, screams"
   },
   {
+    "color": "#d4d954",
     "title": "VIBRATION",
     "description": "detection of landslides, earthquakes, avalanches"
   },
   {
+    "color": "#d05d3c",
     "title": "MOTION",
     "description": "crossing, intrusions, presence, counting"
   },
   {
+    "color": "#0198ca",
     "title": "HEAT",
     "description": "arson, forest fire prevention"
   },
   {
+    "color": "#762b50",
     "title": "IMPACT",
     "description": "collisions, projections, blows, breaking and entering"
   }

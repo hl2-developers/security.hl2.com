@@ -1,18 +1,22 @@
 [
   {
     "title": "Sensors",
+    "image": "brings/sensors.svg",
     "description": "Combine a large variety of low-power miniaturized sensors, embedding one or several sensing functions"
   },
   {
     "title": "Hardware",
+    "image": "brings/hardware.svg",
     "description": "Take advantage of Ultra Low Power components and high-capacity batteries to achieve up to 10 years autonomy"
   },
   {
     "title": "Networks",
+    "image": "brings/networks.svg",
     "description": "Use the new LPWAN wireless IoT networks. They are low-cost, long range, low-power and flexible"
   },
   {
     "title": "Deployment",
+    "image": "brings/deployment.svg",
     "description": "Install your cable-free, easy-to-use applications quickly, leveraging your own network or using those of public operators"
   }
 ]

@@ -30,7 +30,7 @@ body {
   @extend .pt-5, .pb-5;
 
   &.dark {
-    background-color: #191c2c;
+    background-color: #0c0d26;
   }
 
 	@each $breakpoint, $length in $hl2-spacers {
@@ -42,7 +42,7 @@ body {
 }
 
 .jumbotron {
-	background-color: #191c2c;
+	background-color: #0c0d26;
 
 	@include media-breakpoint-up(lg) {
 		// background-image: asset_url('background.svg');
@@ -55,4 +55,8 @@ body {
 			font-size: 3rem;
 		}
 	}
+}
+
+.bring-img {
+  height: 100px;
 }
