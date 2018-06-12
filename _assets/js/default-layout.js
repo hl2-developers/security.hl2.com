@@ -9,10 +9,9 @@
     });
 
     /**
-     * Initialize youtube player
+     * Initialize video player
      */
     const player = new Plyr('#player', {
-      autoplay: true,
       controls: [
         'play',
         'progress',
