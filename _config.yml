@@ -30,8 +30,8 @@ linkedin:
 
 assets:
   raw_precompile:
-    - src: gunshot/*.pdf
-      dst: gunshot
+    - src: pdfs/*.pdf
+      dst: pdfs
   autoprefixer:
     browsers:
       - "last 2 versions"
