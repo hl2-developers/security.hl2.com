@@ -95,7 +95,7 @@ permalink: /
 <span id="technologies" class="anchor"></span>
 <div class="row section">
     <div class="col">
-        <h1 class="text-center">Technologies</h1>
+        <h1 class="text-center">HL2's Technologies</h1>
 
         <div class="row mt-5 justify-content-center">
             {% for technology in site.data.technologies %}
@@ -113,23 +113,21 @@ permalink: /
     </div>
 </div>
 
-<hr class="w-50" />
-
 <span id="use-cases" class="anchor"></span>
-<div class="row section border-bottom">
+<div class="row section dark">
     <div class="col">
-        <h1 class="text-center">Some use cases</h1>
+        <h1 class="text-center text-white">Use cases</h1>
 
         <div class="row mt-5 justify-content-center">
-          <div class="offset-6 col-6">
-              <ul class="list-unstyled">
-                  {% for usecase in site.data.use-cases %}
-                    <li style="color: {{ usecase.color }}">
-                      {{ usecase.title }} : {{ usecase.description }}
-                    </li>
-                  {% endfor %}
-                </ul>
-          </div>
+          {% for usecase in site.data.use-cases %}
+            <div class="col-6 text-center mb-5">
+              <img class="use-case-img" src="{% asset '{{ usecase.image }}' @path %}"></img>
+              <br/>
+              <span class="lead" style="color: {{ usecase.color }}">
+                <strong>{{ usecase.title }}</strong>: {{ usecase.description }}
+              </span>
+            </div>
+          {% endfor %}
         </div>
     </div>
 </div>

@@ -2,26 +2,31 @@
   {
     "color": "#e7ac5a",
     "title": "SOUND",
+    "image": "use-cases/sound.svg",
     "description": "detection of gunshots, explosions, agressions, screams"
   },
   {
     "color": "#d4d954",
     "title": "VIBRATION",
+    "image": "use-cases/vibration.svg",
     "description": "detection of landslides, earthquakes, avalanches"
   },
   {
     "color": "#d05d3c",
     "title": "MOTION",
+    "image": "use-cases/motion.svg",
     "description": "crossing, intrusions, presence, counting"
   },
   {
     "color": "#0198ca",
     "title": "HEAT",
+    "image": "use-cases/heat.svg",
     "description": "arson, forest fire prevention"
   },
   {
-    "color": "#762b50",
+    "color": "#861b49",
     "title": "IMPACT",
+    "image": "use-cases/impact.svg",
     "description": "collisions, projections, blows, breaking and entering"
   }
 ]
