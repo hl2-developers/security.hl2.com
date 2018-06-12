@@ -30,8 +30,8 @@ linkedin:
 
 assets:
   raw_precompile:
-    - gunshot/hl2_gunshot_detection_system_en.pdf
-    - gunshot/hl2_gunshot_detection_system_fr.pdf
+    - src: gunshot/*.pdf
+      dst: gunshot
   autoprefixer:
     browsers:
       - "last 2 versions"
