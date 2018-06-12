@@ -95,7 +95,7 @@ permalink: /
 <span id="technologies" class="anchor"></span>
 <div class="row section">
     <div class="col">
-        <h1 class="text-center">HL2's Technologies</h1>
+        <h1 class="text-center">Our Technologies</h1>
 
         <div class="row mt-5 justify-content-center">
             {% for technology in site.data.technologies %}
@@ -111,8 +111,8 @@ permalink: /
             {% endfor %}
         </div>
 
-        <div class="row text-center mt-5">
-            <div class="col-12 col-lg-3 offset-lg-3">
+        <div class="row mt-5 text-center justify-content-center">
+            <div class="col-12 col-lg-3">
                 <a href="/assets/pdfs/hl2_flyer_overview_sec_en.pdf"
                    target="_blank"
                    class="btn btn-primary btn-lg">
@@ -132,10 +132,23 @@ permalink: /
     </div>
 </div>
 
-<span id="use-cases" class="anchor"></span>
+<span id="solution" class="anchor"></span>
 <div class="row section dark">
     <div class="col">
-        <h1 class="text-center text-white">Use cases</h1>
+        <h1 class="text-center text-white">Our Flexible and innovative solution for your applications</h1>
+
+        <div class="row mt-3 justify-content-center">
+          <div class="col-10">
+              <img src="{% asset 'schema.svg' @path %}" width="100%"></img>
+          </div>
+        </div>
+    </div>
+</div>
+
+<span id="use-cases" class="anchor"></span>
+<div class="row section border-bottom dark">
+    <div class="col">
+        <h1 class="text-center text-white">Some use cases</h1>
 
         <div class="row mt-5 justify-content-center">
           {% for usecase in site.data.use-cases %}
@@ -147,19 +160,6 @@ permalink: /
               </span>
             </div>
           {% endfor %}
-        </div>
-    </div>
-</div>
-
-<span id="solution" class="anchor"></span>
-<div class="row section border-bottom dark">
-    <div class="col">
-        <h1 class="text-center text-white">HL2’s flexible and innovative solution for your applications</h1>
-
-        <div class="row mt-3 justify-content-center">
-          <div class="col-10">
-              <img src="{% asset 'schema.svg' @path %}" width="100%"></img>
-          </div>
         </div>
     </div>
 </div>
