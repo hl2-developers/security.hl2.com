@@ -1,14 +1,17 @@
 [
   {
     "title": "Embedded intelligence",
+    "image": "technologies/artificial-intelligence.svg",
     "description": "Add smarts to your objects by embedding our advanced algorithms, including acoustic and vibratory signature analysis"
   },
   {
     "title": "Secure network communication",
+    "image": "technologies/building.svg",
     "description": "Increase the volume of application data sent, secure your data exchanges and improve the quality of service of LPWAN networks with our SCAP / LTP network stack"
   },
   {
     "title": "Data collection",
+    "image": "technologies/analytics.svg",
     "description": "Easily and rapidly collect your data from providers (Sigfox and LoRaWANTM) via HL2 Panorama, our scalable and interoperable IoT platform"
   }
 ]

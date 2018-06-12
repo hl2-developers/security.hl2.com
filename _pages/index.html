@@ -72,6 +72,7 @@ permalink: /
             {% for technology in site.data.technologies %}
                 <div class="p-2 col-sm-6 col-lg-4">
                     <div class="card h-100 p-3">
+                        <img class="card-img-top technology-img p-4" src="{% asset '{{ technology.image }}' @path %}" />
                         <div class="card-body text-center">
                             <h5 class="card-title">{{ technology.title }}</h5>
                             <p class="card-text">{{ technology.description }}</p>
