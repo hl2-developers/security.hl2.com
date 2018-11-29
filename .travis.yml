@@ -2,11 +2,11 @@ dist: trusty
 sudo: false
 language: ruby
 rvm:
-  - 2.5.1
+- 2.5.1
 env:
-  - JEKYLL_ENV=production
+- JEKYLL_ENV=production
 script:
-  - "./scripts/build.sh"
+- "./scripts/build.sh"
 deploy:
   provider: pages
   local-dir: _site
@@ -18,9 +18,7 @@ deploy:
 notifications:
   email: false
   slack:
-    rooms:
-      - hl2:K02G5Q3OABa27MfJjDTruGfu#travis-ci
     on_success: change
     on_failure: always
-  rooms:
-    secure: dEtBuTTUKyUWZ5iKv9wvS0A6lc9kejFG/95/ttFcfRzaEaDGnkJOCfmpK+2EPPReJoKM5ATzDkcr/Sv/Dj5XkvKBNZ1crztdtItJndCvreDyIyEGB3uw1dThcCiiu1BYCOLzgHSj502HO0qXRNa+FVD4yXnG5584iiLezt+NxiiOd3g2xKIICZrH8GwXeBtkCje3QDj0ljQ+pWuSYaZEUeoWv+Evgp/tzLV4i7E9uP1sBye8G1mTLFgyiG10PsUFO1P/NAMNBXlTlEY0SOQ4fjKKey0aA7ksep+X4l4rAjw8hnhzBsutXL7GFXIDDCjFDDP43ICpXO0i3sk4ioQjLi10mcCvPZJ88PDmBJPn8PLuH0xv1gh2vowE79IVHjeGa4pEECIWAmRSWETx8t1U1M3bOIFwQZSHh9hps2OgDjn/v6iSs3KBCX8qzXRrfItDMhQf6vt0pGyt2MA7zHDZT8OCFU3AVJBe7b2CGBx1gV+mDYwEZJz4npP0wMfg9/owPGEuzb8lfIOclPpCNIdEGALGMvMnrGSEdIMunpxEl6enU2koQRG/Ynf4IME9O+HNJ8YIPOeLC95aFoY1VQCbYk82xIKApF7wiMczCkvb1jSs7xJMPP6tdGxTkXbT9logYyLiq6BsHRn0E9gQds2opvECQI+Sj+C3/IeUW8dNxlw=
+    rooms:
+      secure: HGg8SpHznWpKW86uzFbuJuZB90K8Epy9GWCFlkWNup1yA4jZ9KkvjNosQ6Fz2BpsqnBTgIneiYBOMEO3cITTZrz2Nqs2aDwYhWg+DNC5L2G3XiVKmvpK/vfumDah8awLEMQ1Ss1cLa2ab6owgTe2Uw5E7WuJqSL4sPf2s9jJZ+rj3rTiyaKvPksntiUXufE4ISDEkNhW5qrQClxdiT6yhpYgJ0xju9BNXfcREHb6L/3xY/uwOpOjKJUHJneKj8YnEQ8BDZPFiwMQIo0BSnVgR0YwYSZhrBDWPDpx39jSkUgyYj8VpW19wzXVzCPd37+05gtVqKPDlorgmNvG+pR1tSswdlP8+y6wPmmej6xiohvOcU8INj6RgLUYDEZxu5a2y9EQR/dJkWPR561ZT84LtVyaUzzs6E1PbVijdAq1fphylud6YuOLHitYj67KQBU3SLJLqI0tDbYUm6mNhPG07Tw5jwTdB3f2JA9ZK6ZKKDn/5f8HLDYiIDF90gwVuFYPL4SJcRto68l/UcmmA6LzZNT1P2R7C4Ug48fsgz9RmjiAuBuSWNvVJURcNXrB6/fFE7x4RNfWIy93FoHzwFi2lJKqwsaDNRZ4QetI5hOriIuXTbj680ok6kZR7EX0r/m5+XT2J0GR5iImvAMfNfhqdx5o6TgxDq4cpjLMAba5rrA=
